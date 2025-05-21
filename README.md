@@ -16,20 +16,17 @@
 
 * From command line: `git clone` <https://github.com/SolomonKnudson/bit_magic.git>
 
-  ![ALT text][gitCloneCommand]
-
 #### *Using Zip provided by github::*
 
 * Click on green code button
 
-  ![ALT text][codeButton]
+  ![ALT text][code_button]
 
 * Click *download zip*
 
-  ![ALT text][codeDropDown]
+  ![ALT text][code_drop_down]
 
 * Un-zip directory, you just downloaded, where you want the project located on your machine  
-
 
 ## *Building*
 
@@ -39,15 +36,11 @@
 
 * Linux
 
-
-
 ### *Requirements::*
 
 1. Must have ***cmake installed*** if you plan on following my ***cmake build instructions*** or using the ***CMakeLists.txt*** provided by the repository
 
 1. Must be able to run c++ files on your machine
-
-
 
 ### *Generating build files::*
 
@@ -61,15 +54,9 @@
 
 * ***FROM COMMAND LINE: INSIDE BUILD DIRECTORY::*** `cmake -S .. -B .`
 
-  ![ALT text][buildInsideBuildDir]
-
 * ***FROM COMMAND LINE: INSIDE REPO ROOT DIRECTORY::*** `cmake` -S . -B <*build directory*>
 
-  ![ALT text][buildInsideRepoRootDir]
-
 * ***FROM COMMAND LINE: ANY DIRECTORY::*** `cmake` -S <*full-path/bit_magic/*> -B <*full-path/bit_magic/<*build directory*>*>
-
-  ![ALT text][buildFromAnyDir]
 
 ### *Building source::*
 
@@ -77,27 +64,11 @@
 
 * ***FROM COMMAND LINE: INSIDE BUILD DIRECTORY::*** `cmake --build .`
 
-  ![ALT text][buildSource]
-
 ## *Running Code*
 
 * Build executable
 
-  ![ALT][buildExecutable]
-
 * Run executable
 
-  ![ALT text][runExecutable]
-
-[codeButton]: 
-[codeDropDown]: 
-
-[gitCloneCommand]: 
-
-[buildInsideBuildDir]: 
-[buildInsideRepoRootDir]: 
-[buildFromAnyDir]: 
-[buildSource]: 
-
-[buildExecutable]: 
-[runExecutable]: 
+[code_button]: https://github.com/SolomonKnudson/bit_magic/blob/main/img/installing/code_button.png 
+[code_drop_down]: https://github.com/SolomonKnudson/bit_magic/blob/main/img/installing/code_drop_down.png 
