@@ -13,15 +13,11 @@
 
 * must have ***git installed locally*** if you're going to use `git clone`
 
----
-
 ### *Cloning from GitHub*
 
 * `cd` <*full-path/where git should clone the repo*>
 
 * From command line: `git clone` <https://github.com/SolomonKnudson/bit_magic.git>
-
----
 
 ### *Using the Zip provided by GitHub*
 
@@ -45,15 +41,11 @@
 
 * Linux
 
----
-
 ### *Requirements*
 
 1. Must have ***cmake installed*** if you plan on following my ***cmake build instructions*** or using the ***CMakeLists.txt*** provided by the repository
 
 1. Must be able to run C++ files on your machine
-
----
 
 ### *Generating build files*
 
@@ -71,14 +63,11 @@
 
 * ***ANY DIRECTORY::*** `cmake` -S <*full-path/bit_magic/*> -B <*full-path/bit_magic/<*build directory*>*>
 
----
-
 ### *Building source*
 
 * *Note:* Previous examples will work here as well; replace cmake -S <*path*> -B <*path*> with cmake --build <*path*>
 
 * ***FROM COMMAND LINE: INSIDE BUILD DIRECTORY::*** `cmake --build .`
-
 
 ---
 
