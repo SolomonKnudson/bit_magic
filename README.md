@@ -34,8 +34,6 @@
 
 ## *Building*
 
----
-
 ### *Supported Platforms:*
 
 * Windows
