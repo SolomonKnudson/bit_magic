@@ -6,19 +6,19 @@
 
 ## *Downloading*
 
-#### *Requirements::*
+#### *Requirements:*
 
 * must have ***git installed locally*** if you're going to use `git clone`
   
-#### *Cloning from GitHub::*
+#### *Cloning from GitHub:*
 
 * `cd` <*full-path/where git should clone the repo*>
 
 * From command line: `git clone` <https://github.com/SolomonKnudson/bit_magic.git>
 
-#### *Using Zip provided by github::*
+#### *Using the Zip provided by GitHub:*
 
-* Click on green code button
+* Click on the green code button
 
   ![ALT text][code_button]
 
@@ -26,7 +26,7 @@
 
   ![ALT text][code_drop_down]
 
-* Un-zip directory, you just downloaded, where you want the project located on your machine  
+* Unzip the directory you just downloaded, where you want the project to be located on your machine  
 
 ## *Building*
 
@@ -40,11 +40,11 @@
 
 1. Must have ***cmake installed*** if you plan on following my ***cmake build instructions*** or using the ***CMakeLists.txt*** provided by the repository
 
-1. Must be able to run c++ files on your machine
+1. Must be able to run C++ files on your machine
 
-### *Generating build files::*
+### *Generating build files:*
 
-##### *From command line::*
+##### *From command line:*
 
 * `cd` <*full-path/repo name*>
 
@@ -68,7 +68,7 @@
 
 * Build executable
 
-* Run executable
+* Run the executable
 
 [code_button]: https://github.com/SolomonKnudson/bit_magic/blob/main/img/installing/code_button.png 
 [code_drop_down]: https://github.com/SolomonKnudson/bit_magic/blob/main/img/installing/code_drop_down.png 
