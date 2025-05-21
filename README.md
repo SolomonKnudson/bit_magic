@@ -1,11 +1,10 @@
 # *bit_magic*
 
-### *Synopsis*
+## *Synopsis*
 
 * This repository is a simple library for visualizing binary operations. 
----
 
-### *Downloading*
+## *Downloading*
 
 #### *Requirements::*
 
@@ -31,9 +30,8 @@
 
 * Un-zip directory, you just downloaded, where you want the project located on your machine  
 
----
 
-### *Building*
+## *Building*
 
 ### *Supported Platforms:*
 
@@ -41,7 +39,7 @@
 
 * Linux
 
----
+
 
 ### *Requirements::*
 
@@ -49,7 +47,7 @@
 
 1. Must be able to run c++ files on your machine
 
----
+
 
 ### *Generating build files::*
 
@@ -73,8 +71,6 @@
 
   ![ALT text][buildFromAnyDir]
 
----
-
 ### *Building source::*
 
 * *Note:* Previous examples will work here as well; replace cmake -S <*path*> -B <*path*> with cmake --build <*path*>
@@ -82,9 +78,8 @@
 * ***FROM COMMAND LINE: INSIDE BUILD DIRECTORY::*** `cmake --build .`
 
   ![ALT text][buildSource]
----
 
-### *Running Code*
+## *Running Code*
 
 * Build executable
 
@@ -94,7 +89,6 @@
 
   ![ALT text][runExecutable]
 
----
 [codeButton]: 
 [codeDropDown]: 
 
