@@ -52,11 +52,11 @@
 
 * `cd` <*build directory*>
 
-* ***FROM COMMAND LINE: INSIDE BUILD DIRECTORY::*** `cmake -S .. -B .`
+* ***INSIDE BUILD DIRECTORY::*** `cmake -S .. -B .`
 
-* ***FROM COMMAND LINE: INSIDE REPO ROOT DIRECTORY::*** `cmake` -S . -B <*build directory*>
+* ***INSIDE REPO ROOT DIRECTORY::*** `cmake` -S . -B <*build directory*>
 
-* ***FROM COMMAND LINE: ANY DIRECTORY::*** `cmake` -S <*full-path/bit_magic/*> -B <*full-path/bit_magic/<*build directory*>*>
+* ***ANY DIRECTORY::*** `cmake` -S <*full-path/bit_magic/*> -B <*full-path/bit_magic/<*build directory*>*>
 
 ### *Building source::*
 
