@@ -2,7 +2,7 @@
 
 ## *Synopsis*
 
-* This repository is a simple library for visualizing binary operations. 
+* A simple library for visualizing binary operations. 
 
 ## *Downloading*
 
