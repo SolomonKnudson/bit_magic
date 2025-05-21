@@ -1,4 +1,4 @@
-# *bit_magic
+# *bit_magic*
 
 ## *Synopsis*
 
