@@ -39,7 +39,7 @@ namespace bit_magic
       print::formatted_bit_operation(
           n,
           (n - 1),
-          bit_operations::and_,
+          BitOperations::And,
           "n",
           (std::to_string(n) + " - 1"),
           (std::to_string(n) + " & " + std::to_string((n - 1))),
@@ -62,7 +62,7 @@ namespace bit_magic
         print::formatted_bit_operation(
             odd_occurence,
             i,
-            types::bit_operations::exor,
+            types::BitOperations::Exor,
             "odd_occurence",
             "i",
             (std::to_string(odd_occurence) + " ^ " + std::to_string(i)),
@@ -87,16 +87,16 @@ namespace bit_magic
       print::formatted_bit_operation(
           n,
           bit,
-          types::bit_operations::shift_right,
+          types::BitOperations::RightShift,
           "n",
           "bit",
           (std::to_string(n) + " >> " + std::to_string(bit)),
           get_byte_size(std::max(n, bit)));
 
       print::formatted_bit_operation(
-          util::do_bit_operation(n, bit, types::bit_operations::shift_right),
+          util::do_bit_operation(n, bit, types::BitOperations::RightShift),
           bit,
-          types::bit_operations::and_,
+          types::BitOperations::And,
           "n",
           "bit",
           ("(" + std::to_string(n) + " >> " + std::to_string(bit) + ") & 1"),
@@ -119,7 +119,7 @@ namespace bit_magic
     {
       print::formatted_bit_operation(n,
                                      1,
-                                     types::bit_operations::and_,
+                                     types::BitOperations::And,
                                      "n",
                                      "1",
                                      (std::to_string(n) + " & 1"),
@@ -139,16 +139,16 @@ namespace bit_magic
         print::formatted_bit_operation(
             n,
             i,
-            types::bit_operations::shift_right,
+            types::BitOperations::RightShift,
             "n",
             "i",
             (std::to_string(n) + " >> " + std::to_string(i)),
             get_byte_size(n));
 
         print::formatted_bit_operation(
-            util::do_bit_operation(n, i, types::bit_operations::shift_right),
+            util::do_bit_operation(n, i, types::BitOperations::RightShift),
             1,
-            types::bit_operations::and_,
+            types::BitOperations::And,
             "n",
             "1",
             ("(" + std::to_string(n) + " >> " + std::to_string(i) + ") & 1"),

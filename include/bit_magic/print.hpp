@@ -73,13 +73,13 @@ namespace bit_magic
     void
     bit_operation(size_t x,
                   size_t y,
-                  types::bit_operations op,
+                  types::BitOperations op,
                   types::Bytes binary_format = types::Bytes::byte);
 
     void
     formatted_bit_operation(size_t x,
                             size_t y,
-                            types::bit_operations op,
+                            types::BitOperations op,
                             const std::string& x_name,
                             const std::string& y_name,
                             const std::string& result_name,
@@ -88,7 +88,7 @@ namespace bit_magic
     void
     select_bit_operation(size_t x,
                          size_t y,
-                         types::bit_operations op,
+                         types::BitOperations op,
                          bool formatted = false,
                          types::Bytes binary_format = types::Bytes::byte);
   } // namespace print

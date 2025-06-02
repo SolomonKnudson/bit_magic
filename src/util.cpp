@@ -8,27 +8,27 @@ namespace bit_magic
   namespace util
   {
     std::ostream&
-    operator<<(std::ostream& os, const bit_operations op)
+    operator<<(std::ostream& os, const BitOperations op)
     {
       switch (op)
       {
-        case bit_operations::or_:
+        case BitOperations::Or:
           os << "|";
           break;
 
-        case bit_operations::and_:
+        case BitOperations::And:
           os << "&";
           break;
 
-        case bit_operations::exor:
+        case BitOperations::Exor:
           os << "^";
           break;
 
-        case bit_operations::shift_left:
+        case BitOperations::LeftShift:
           os << "<<";
           break;
 
-        case bit_operations::shift_right:
+        case BitOperations::RightShift:
           os << ">>";
           break;
       }
@@ -37,29 +37,29 @@ namespace bit_magic
     }
 
     size_t
-    do_bit_operation(const size_t x, const size_t y, const bit_operations op)
+    do_bit_operation(const size_t x, const size_t y, const BitOperations op)
     {
       size_t ret{};
 
       switch (op)
       {
-        case bit_operations::or_:
+        case BitOperations::Or:
           ret = x | y;
           break;
 
-        case bit_operations::and_:
+        case BitOperations::And:
           ret = x & y;
           break;
 
-        case bit_operations::exor:
+        case BitOperations::Exor:
           ret = x ^ y;
           break;
 
-        case bit_operations::shift_left:
+        case BitOperations::LeftShift:
           ret = x << y;
           break;
 
-        case bit_operations::shift_right:
+        case BitOperations::RightShift:
           ret = x >> y;
           break;
       }
@@ -77,12 +77,12 @@ namespace bit_magic
       std::cout << '\n';
     }
 
-    static inline size_t
+    size_t
     get_bit_size(size_t n)
     {
       if (n == 0)
       {
-        return 0;
+        return 1;
       }
 
       size_t bits{1};
@@ -100,15 +100,15 @@ namespace bit_magic
     {
       //Number of bits to
       //represent n in binary
-      size_t bits_size{(get_bit_size(n))};
+      size_t bit_size{(get_bit_size(n))};
       Bytes will_fit_in{};
 
       for (size_t i{8}; i <= Bytes::byte_8; i *= 2)
       {
         //find the smallest byte
-        //that can hold {bits_needed}
+        //that can hold {bit_size}
         //amount of bits
-        if ((will_fit_in = Bytes{static_cast<types::Bytes>(i)}) >= bits_size)
+        if ((will_fit_in = Bytes{static_cast<types::Bytes>(i)}) >= bit_size)
         {
           break;
         }

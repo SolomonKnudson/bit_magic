@@ -15,12 +15,12 @@ namespace bit_magic
       (formatted ? formatted_bit_operation(
                        x,
                        y,
-                       bit_operations::or_,
+                       BitOperations::Or,
                        "Top Operand",
                        "Lower Operand",
                        (std::to_string(x) + " | " + std::to_string(y)),
                        binary_format)
-                 : bit_operation(x, y, bit_operations::or_, binary_format));
+                 : bit_operation(x, y, BitOperations::Or, binary_format));
     }
 
     void
@@ -32,12 +32,12 @@ namespace bit_magic
       (formatted ? formatted_bit_operation(
                        x,
                        y,
-                       bit_operations::and_,
+                       BitOperations::And,
                        "Top Operand",
                        "Lower Operand",
                        (std::to_string(x) + " & " + std::to_string(y)),
                        binary_format)
-                 : bit_operation(x, y, bit_operations::and_, binary_format));
+                 : bit_operation(x, y, BitOperations::And, binary_format));
     }
 
     void
@@ -49,12 +49,12 @@ namespace bit_magic
       (formatted ? formatted_bit_operation(
                        x,
                        y,
-                       types::bit_operations::exor,
+                       types::BitOperations::Exor,
                        "Top Operand",
                        "Lower Operand",
                        (std::to_string(x) + " ^ " + std::to_string(y)),
                        binary_format)
-                 : bit_operation(x, y, bit_operations::exor, binary_format));
+                 : bit_operation(x, y, BitOperations::Exor, binary_format));
     }
 
     //only print function that supports negative numbers
@@ -73,13 +73,13 @@ namespace bit_magic
       (formatted ? formatted_bit_operation(
                        n,
                        shift_by,
-                       types::bit_operations::shift_left,
+                       types::BitOperations::LeftShift,
                        "n",
                        "shift_by",
                        (std::to_string(n) + " << " + std::to_string(shift_by)),
                        binary_format)
                  : bit_operation(
-                       n, shift_by, bit_operations::shift_left, binary_format));
+                       n, shift_by, BitOperations::LeftShift, binary_format));
     }
 
     void
@@ -88,17 +88,16 @@ namespace bit_magic
                 const bool formatted,
                 const Bytes binary_format)
     {
-      (formatted
-           ? formatted_bit_operation(
-                 n,
-                 shift_by,
-                 types::bit_operations::shift_right,
-                 "n",
-                 "shift_by",
-                 (std::to_string(n) + " >> " + std::to_string(shift_by)),
-                 binary_format)
-           : bit_operation(
-                 n, shift_by, bit_operations::shift_right, binary_format));
+      (formatted ? formatted_bit_operation(
+                       n,
+                       shift_by,
+                       types::BitOperations::RightShift,
+                       "n",
+                       "shift_by",
+                       (std::to_string(n) + " >> " + std::to_string(shift_by)),
+                       binary_format)
+                 : bit_operation(
+                       n, shift_by, BitOperations::RightShift, binary_format));
     }
   } // namespace print
 } // namespace bit_magic

@@ -14,13 +14,13 @@ namespace bit_magic
       byte_8 = 64,
     };
 
-    enum class bit_operations
+    enum class BitOperations
     {
-      or_,
-      and_,
-      exor,
-      shift_left,
-      shift_right,
+      Or,
+      And,
+      Exor,
+      LeftShift,
+      RightShift,
     };
   } // namespace types
 } // namespace bit_magic

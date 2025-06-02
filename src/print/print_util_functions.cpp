@@ -41,7 +41,7 @@ namespace bit_magic
     void
     bit_operation(const size_t x,
                   const size_t y,
-                  const bit_operations op,
+                  const BitOperations op,
                   const Bytes binary_format)
     {
       std::cout << "  ";
@@ -64,7 +64,7 @@ namespace bit_magic
     void
     formatted_bit_operation(const size_t x,
                             const size_t y,
-                            const types::bit_operations op,
+                            const types::BitOperations op,
                             const std::string& x_name,
                             const std::string& y_name,
                             const std::string& result_name,
@@ -98,29 +98,29 @@ namespace bit_magic
     void
     select_bit_operation(const size_t x,
                          const size_t y,
-                         const types::bit_operations op,
+                         const types::BitOperations op,
                          const bool formatted,
                          const Bytes binary_format)
     {
       switch (op)
       {
-        case bit_operations::or_:
+        case BitOperations::Or:
           or_(x, y, formatted, binary_format);
           break;
 
-        case bit_operations::and_:
+        case BitOperations::And:
           and_(x, y, formatted, binary_format);
           break;
 
-        case bit_operations::exor:
+        case BitOperations::Exor:
           exor(x, y, formatted, binary_format);
           break;
 
-        case bit_operations::shift_left:
+        case BitOperations::LeftShift:
           shift_left(x, y, formatted, binary_format);
           break;
 
-        case bit_operations::shift_right:
+        case BitOperations::RightShift:
           shift_right(x, y, formatted, binary_format);
           break;
       }

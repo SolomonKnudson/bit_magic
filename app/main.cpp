@@ -12,8 +12,7 @@ main()
   bit_magic::types::Bytes bin_fmt{bit_magic::types::byte};
   bool format{true};
 
-  bit_magic::types::bit_operations bit_op{
-      bit_magic::types::bit_operations::exor};
+  bit_magic::types::BitOperations bit_op{bit_magic::types::BitOperations::Exor};
 
   bit_magic::print::select_bit_operation(x, y, bit_op, true);
 

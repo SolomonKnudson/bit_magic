@@ -8,7 +8,7 @@ namespace bit_magic
   namespace util
   {
     size_t
-    do_bit_operation(size_t x, size_t y, types::bit_operations op);
+    do_bit_operation(size_t x, size_t y, types::BitOperations op);
 
     void
     dash_line(const types::Bytes size);
