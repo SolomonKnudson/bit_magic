@@ -20,20 +20,20 @@ namespace bit_magic
 
       switch (binary_format)
       {
-        case Bytes::byte:
-          std::cout << std::bitset<byte>{n};
+        case Bytes::Byte:
+          std::cout << std::bitset<Byte>{n};
           break;
 
-        case Bytes::byte_2:
-          std::cout << std::bitset<byte_2>{n};
+        case Bytes::Byte_2:
+          std::cout << std::bitset<Byte_2>{n};
           break;
 
-        case Bytes::byte_4:
-          std::cout << std::bitset<byte_4>{n};
+        case Bytes::Byte_4:
+          std::cout << std::bitset<Byte_4>{n};
           break;
 
-        case Bytes::byte_8:
-          std::cout << std::bitset<byte_8>{n};
+        case Bytes::Byte_8:
+          std::cout << std::bitset<Byte_8>{n};
           break;
       }
     }

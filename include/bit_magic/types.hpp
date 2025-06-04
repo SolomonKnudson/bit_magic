@@ -8,10 +8,10 @@ namespace bit_magic
   {
     enum Bytes : size_t
     {
-      byte = 8,
-      byte_2 = 16,
-      byte_4 = 32,
-      byte_8 = 64,
+      Byte = 8,
+      Byte_2 = 16,
+      Byte_4 = 32,
+      Byte_8 = 64,
     };
 
     enum class BitOperations

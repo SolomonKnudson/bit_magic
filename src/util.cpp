@@ -103,7 +103,7 @@ namespace bit_magic
       size_t bit_size{(get_bit_size(n))};
       Bytes will_fit_in{};
 
-      for (size_t i{8}; i <= Bytes::byte_8; i *= 2)
+      for (size_t i{8}; i <= Bytes::Byte_8; i *= 2)
       {
         //find the smallest byte
         //that can hold {bit_size}

@@ -5,38 +5,30 @@
 
 namespace bit_magic
 {
-  //name clashes will happen if
-  //print namespace is un-wrapped
-  //eg. using namespace bit_magic::print
-  //namespace used to bypass print_ prefix
-
-  //Only not(n) accepts negative numbers
   namespace print
   {
-    //std::bitset uses size_t to set the size
-    //negative n will wrap
     void
     to_binary(size_t n,
               bool raw_binary,
-              types::Bytes binary_format = types::Bytes::byte);
+              types::Bytes binary_format = types::Bytes::Byte);
 
     void
     or_(size_t x,
         size_t y,
         bool formatted,
-        types::Bytes binary_format = types::Bytes::byte);
+        types::Bytes binary_format = types::Bytes::Byte);
 
     void
     and_(size_t x,
          size_t y,
          bool formatted,
-         types::Bytes binary_format = types::Bytes::byte);
+         types::Bytes binary_format = types::Bytes::Byte);
 
     void
     exor(size_t x,
          size_t y,
          bool formatted,
-         types::Bytes binary_format = types::Bytes::byte);
+         types::Bytes binary_format = types::Bytes::Byte);
 
     //Does not print binary
     //not(n) must be called by itself
@@ -47,13 +39,13 @@ namespace bit_magic
     shift_left(size_t n,
                size_t shift_by,
                bool formatted,
-               types::Bytes binary_format = types::Bytes::byte);
+               types::Bytes binary_format = types::Bytes::Byte);
 
     void
     shift_right(size_t n,
                 size_t shift_by,
                 bool formatted,
-                types::Bytes binary_format = types::Bytes::byte);
+                types::Bytes binary_format = types::Bytes::Byte);
 
     void
     total_set_bits(size_t n);
@@ -74,7 +66,7 @@ namespace bit_magic
     bit_operation(size_t x,
                   size_t y,
                   types::BitOperations op,
-                  types::Bytes binary_format = types::Bytes::byte);
+                  types::Bytes binary_format = types::Bytes::Byte);
 
     void
     formatted_bit_operation(size_t x,
@@ -83,14 +75,14 @@ namespace bit_magic
                             const std::string& x_name,
                             const std::string& y_name,
                             const std::string& result_name,
-                            types::Bytes binary_format = types::Bytes::byte);
+                            types::Bytes binary_format = types::Bytes::Byte);
 
     void
     select_bit_operation(size_t x,
                          size_t y,
                          types::BitOperations op,
                          bool formatted = false,
-                         types::Bytes binary_format = types::Bytes::byte);
+                         types::Bytes binary_format = types::Bytes::Byte);
   } // namespace print
 } // namespace bit_magic
 #endif // !BIT_MAGIC_H
