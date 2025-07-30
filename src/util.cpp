@@ -3,38 +3,39 @@
 #include <string>
 
 using namespace bit_magic::types;
+std::ostream&
+operator<<(std::ostream& os, const BitOperations op)
+{
+  switch (op)
+  {
+    case BitOperations::Or:
+      os << "|";
+      break;
+
+    case BitOperations::And:
+      os << "&";
+      break;
+
+    case BitOperations::Exor:
+      os << "^";
+      break;
+
+    case BitOperations::LeftShift:
+      os << "<<";
+      break;
+
+    case BitOperations::RightShift:
+      os << ">>";
+      break;
+  }
+
+  return os;
+}
+
 namespace bit_magic
 {
   namespace util
   {
-    std::ostream&
-    operator<<(std::ostream& os, const BitOperations op)
-    {
-      switch (op)
-      {
-        case BitOperations::Or:
-          os << "|";
-          break;
-
-        case BitOperations::And:
-          os << "&";
-          break;
-
-        case BitOperations::Exor:
-          os << "^";
-          break;
-
-        case BitOperations::LeftShift:
-          os << "<<";
-          break;
-
-        case BitOperations::RightShift:
-          os << ">>";
-          break;
-      }
-
-      return os;
-    }
 
     size_t
     do_bit_operation(const size_t x, const size_t y, const BitOperations op)

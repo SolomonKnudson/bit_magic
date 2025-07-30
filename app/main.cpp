@@ -9,7 +9,7 @@ main()
   int64_t x{260};
   int64_t y{9000};
 
-  bit_magic::types::Bytes bin_fmt{bit_magic::types::byte};
+  bit_magic::types::Bytes bin_fmt{bit_magic::types::Byte};
   bool format{true};
 
   bit_magic::types::BitOperations bit_op{bit_magic::types::BitOperations::Exor};

@@ -3,6 +3,9 @@
 #include <bit_magic/types.hpp>
 #include <iostream>
 
+std::ostream&
+operator<<(std::ostream& os, bit_magic::types::BitOperations op);
+
 namespace bit_magic
 {
   namespace util
@@ -12,9 +15,6 @@ namespace bit_magic
 
     types::Bytes
     get_byte_size(size_t n);
-
-    std::ostream&
-    operator<<(std::ostream& os, types::BitOperations op);
   } // namespace util
 } // namespace bit_magic
 #endif // !BIT_UTIL_H
